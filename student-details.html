@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student-details</title>
+    <style>
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 5px solid #a85b5b;
+            border-radius: 5px;
+            align-content: center;
+            justify-content: space-evenly;
+        }
+        p{
+            font-size: 3rem;
+            font-weight: 600;
+        }
+        table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Student Details</p>
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Roll</th>
+                    <th>Class</th>
+                    <th>Domain</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="studentTableBody">
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
