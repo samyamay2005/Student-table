@@ -4,17 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Table</title>
+    <link rel="stylesheet" href="/assets/css/app-dark.min.css">
+    <link rel="stylesheet" href="/assets/css/app-rtl.min.css">
+    <link rel="stylesheet" href="/assets/css/app.min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/icons.min.css">
+    <style>
+        div{
+            justify-content: center;
+            align-content: center;
+            display: flexbox;
+            
+        }
+        p{
+            font-size: 3rem;
+            font-weight: 600;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 5px solid #a85b5b;
+            border-radius: 5px;
+            align-content: center;
+        }
+        form{
+            justify-content: center;
+            max-width: 490px;            
+        }
+        input{
+            max-width: 400px;
+        }
+        table{
+            font-size: 1rem;
+            justify-content: space-evenly;
+            justify-content: center;
+        }
+       
+
+    </style>
+    
 </head>
 <body>
-    <div>
-        <h2>Student Table</h2>
+    <div class="container">
+        <p>Student Table</p>
         <form>
             <input type="text" id="name" placeholder="Name" required>
             <input type="text" id="roll" placeholder="Roll" required>
             <input type="text" id="class" placeholder="Class" required>
             <input type="text" id="domain" placeholder="Domain" required>
             <button type="submit">Submit</button>
-        </form>
+       </form>
         <table>
             <thead>
                 <tr>
@@ -29,6 +70,8 @@
             </tbody>
         </table>
     </div>
-    <script src=""></script>
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/pages/table-editable.int.js"></script>
+    <script src="/assets/js/pages/table-responsive.init.js"></script>
 </body>
 </html>
